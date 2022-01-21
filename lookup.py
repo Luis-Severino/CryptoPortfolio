@@ -83,7 +83,8 @@ header_Profit_Loss_total.grid(row=0, column=9, sticky=N+S+E+W)
 ##tkinter.TclError: couldn't recognize data in image file "/home/school/BTC.jpg"
 ## I downloaded Pillow and used  ImageTk to fix that problem
 
-root.tk.call('wm', 'iconphoto', root._w, ImageTk.PhotoImage(file='/home/school/BTC.jpg'))
+## Changed location of the BTC.jpg file to the same directory where the lookup.py file is
+root.tk.call('wm', 'iconphoto', root._w, ImageTk.PhotoImage(file='./BTC.jpg'))
 ##***got this error message from the abive code
 ##Error of failed request:  BadLength (poly request too large or internal Xlib length error)
 ##Major opcode of failed request:  190 ()
